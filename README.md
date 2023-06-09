@@ -14,7 +14,7 @@ This project aims to develop a live feed aggregator in collaboration with Transp
 
 Provide step-by-step instructions on how to install and set up the project locally. Include any dependencies, prerequisites, or environment setup required. For example:
 
-1. Clone the repository: `git clone <git repository link>`
+1. Clone the repository: `git clone https://github.com/EnricoZanetti/Real-Time-London-Underground-Arrival-Time-Aggregator`
 2. Navigate to the project directory: `cd project`
 3. Install dependencies: `pip install -r requirements.txt`
 
