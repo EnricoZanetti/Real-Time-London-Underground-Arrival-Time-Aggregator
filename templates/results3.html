@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SEARCH RESULTS</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>{{LS}} Line: Arrivals</h1>
+    <div class="center">
+        {% if LS == 'Bakerloo' %}
+            <img src="https://lasttrain.co.uk/wp-content/uploads/2016/05/bak_big-1.gif" alt="Bakerloo Line Map" width="1000">
+        {% elif LS == 'Central' %}
+            <img src="https://lasttrain.co.uk/wp-content/uploads/2016/05/cen_big-1.gif" alt="Central Line Map" width="1000">
+        {% elif LS == 'Circle' %}
+            <img src="https://lasttrain.co.uk/wp-content/uploads/2016/05/cir_big.gif" alt="Circle Line Map" width="1000">
+        {% elif LS == 'District' %}
+            <img src="https://lasttrain.co.uk/wp-content/uploads/2016/05/dis_big.gif" alt="District Line Map" width="1000">
+        {% elif LS == 'Hammersmith & City' %}
+            <img src="https://lasttrain.co.uk/wp-content/uploads/2016/05/cir_big.gif" alt="Hammersmith & City Line Map" width="1000">
+        {% elif LS == 'Jubilee' %}
+            <img src="https://lasttrain.co.uk/wp-content/uploads/2016/05/jub_big.gif" alt="Jubilee Line Map" width="1000">
+        {% elif LS == 'Metropolitan' %}
+            <img src="https://lasttrain.co.uk/wp-content/uploads/2016/05/met_big.gif" alt="Metropolitan Line Map" width="1000">
+        {% elif LS == 'Northern' %}
+            <img src="https://lasttrain.co.uk/wp-content/uploads/2021/09/nor_big-plus-2021-extension-scaled.gif" alt="Northern Line Map" width="1000">
+        {% elif LS == 'Piccadilly' %}
+            <img src="https://lasttrain.co.uk/wp-content/uploads/2016/05/pic_big.gif" alt="Piccadilly Line Map" width="1000">
+        {% elif LS == 'Victoria' %}
+            <img src="https://lasttrain.co.uk/wp-content/uploads/2016/05/vic_big.gif" alt="Victoria Line Map" width="1000">
+        {% elif LS == 'Waterloo & City' %}
+            <img src="https://lasttrain.co.uk/wp-content/uploads/2016/05/wat_big.gif" alt="Waterloo & City Line Map" width="500">
+        {% endif %}
+    </div>
+
+
+
+    <table>
+        <tr>
+            <th>Vehicle ID</th>
+            <th>Real time position</th>
+            <th>Destination</th>
+            <th>Expected arrival</th>
+            <th>Platform</th>
+            <th>Station</th>
+            <th>Time left</th>
+            <th>Toward</th>
+        </tr>
+        {% for arrival in line_arrivals %}
+        <tr>
+            <td>{{ arrival['vehicleId'] }}</td>
+            <td>{{ arrival['currentLocation'] }}</td>
+            <td>{{ arrival['destinationName'] }}</td>
+            <td>{{ arrival['expectedArrival'] }}</td>            
+            <td>{{ arrival['platformName'] }}</td>
+            <td>{{ arrival['stationName'] }}</td>
+            <td>{{ arrival['TimeToStation'] }}</td>
+            <td>{{ arrival['Towards'] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

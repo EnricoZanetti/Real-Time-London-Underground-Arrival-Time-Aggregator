@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Transport for London Underground: Arrivals</title>
+    <style>
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 10px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 20px;
+        }
+
+        .image-container img {
+            width: 1000px;
+            height: auto;
+        }
+
+        .logo-container {
+            position: absolute;
+            top: 40px;
+            left: 300px;
+            margin-right: 10px;
+        }
+
+        .logo-container img {
+            width: 100px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo-container">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Underground.svg" alt="Logo">
+        </div>
+        <h1>Transport for London Underground: Arrivals</h1>
+        <form action="/results" method="GET">
+            <div class="form-group">
+                <label for="line_name">Line name:</label>
+                <select id="line_name" name="line_name" required>
+                    <option value="" disabled selected>Choose an option</option>
+                    <option value="Bakerloo">Bakerloo Line</option>
+                    <option value="Central">Central Line</option>
+                    <option value="Circle">Circle Line</option>
+                    <option value="District">District Line</option>
+                    <option value="Hammersmith & City">Hammersmith & City Line</option>
+                    <option value="Jubilee">Jubilee Line</option>
+                    <option value="Metropolitan">Metropolitan Line</option>
+                    <option value="Northern">Northern Line</option>
+                    <option value="Piccadilly">Piccadilly Line</option>
+                    <option value="Victoria">Victoria Line</option>
+                    <option value="Waterloo & City">Waterloo & City Line</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn">Search</button>
+            </div>
+            <div class="image-container">
+                <img src="https://www.londontubemap.org/maps/London-tube-map-2023.png" alt="London Underground Map">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
