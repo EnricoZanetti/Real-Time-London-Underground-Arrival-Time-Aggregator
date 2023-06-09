@@ -7,6 +7,7 @@ This project aims to develop a live feed aggregator in collaboration with Transp
 ## Table of Contents
 
 - [Installation](#installation)
+- [System Architecture](#system-architecture)
 - [Usage](#usage)
 - [License](#license)
 
@@ -18,9 +19,11 @@ Provide step-by-step instructions on how to install and set up the project local
 2. Navigate to the project directory: `cd project`
 3. Install dependencies: `pip install -r requirements.txt`
 
-## Usage
+## System Architecture
 
 ![Transport data pipeline](https://github.com/EnricoZanetti/Real-Time-London-Underground-Arrival-Time-Aggregator/assets/98333026/88a6b45d-bf63-4cc6-8623-5fc9e0565995)
+
+## Usage
 
 To use the project and access its main functionalities, follow these instructions:
 
