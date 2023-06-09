@@ -20,6 +20,8 @@ Provide step-by-step instructions on how to install and set up the project local
 
 ## Usage
 
+![Transport data pipeline](https://github.com/EnricoZanetti/Real-Time-London-Underground-Arrival-Time-Aggregator/assets/98333026/88a6b45d-bf63-4cc6-8623-5fc9e0565995)
+
 To use the project and access its main functionalities, follow these instructions:
 
 1. **Environment Setup:**
