@@ -35,8 +35,21 @@ To use the project and access its main functionalities, follow these instruction
 2. **Database Configuration:**
    - Access the "my-postgres-container" using a database management tool or command line.
    - Connect to the "tubedb" database.
-   - Create a table named "lines" in the "tubedb" database. This table will serve as a persistent storage entity for the relevant data.
-
+   - Create a table named "lines" in the "tubedb" database. This table will serve as a persistent storage entity for the relevant data.          This is the schema for the "lines" table:
+     ```bash
+      CREATE TABLE lines (
+   		vehicleId TEXT,
+         currentLocation TEXT,
+         destinationName TEXT,
+   		lineName TEXT,
+         expectedArrival TEXT,
+         platformName TEXT,
+   		stationName TEXT,
+   		timeToStation TEXT,
+   		towards TEXT
+         );
+      ```
+     
 3. **Python Environment and Dependencies:**
    - Create a virtual environment for Python using a tool like `virtualenv` or `conda`.
    - Activate the virtual environment.
