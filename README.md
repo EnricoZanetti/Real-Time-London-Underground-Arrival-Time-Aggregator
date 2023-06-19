@@ -39,11 +39,11 @@ To use the project and access its main functionalities, follow these instruction
      ```bash
       CREATE TABLE lines (
 		vehicleId TEXT,
-    		currentLocation TEXT,
-    		destinationName TEXT,
+    	currentLocation TEXT,
+    	destinationName TEXT,
 		lineName TEXT,
    		expectedArrival TEXT,
-    		platformName TEXT,
+    	platformName TEXT,
 		stationName TEXT,
 		timeToStation TEXT,
 		towards TEXT
