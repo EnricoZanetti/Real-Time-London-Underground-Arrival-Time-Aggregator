@@ -7,8 +7,8 @@ lines = ['bakerloo', 'central', 'circle', 'district', 'hammersmith-city', 'jubil
 
 # Configuration
 API_ENDPOINT = 'https://api.tfl.gov.uk/Line/{}/Arrivals'
-APP_ID = 'e2fe22dae03d4db0a54378c1a57a5438'
-APP_KEY = 'a4ff3fc8cdc640cc8b3195435404ac03'
+APP_ID = 'b0fb1f24595d452fa38aa37d19743da2'
+APP_KEY = 'cc10e604899f4a9fa109202efa05352f'
 
 def fetch_and_update_data():
     headers = {
